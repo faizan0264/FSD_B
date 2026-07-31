@@ -1,0 +1,247 @@
+/* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Footer Container */
+    .site-footer {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      padding: 50px 40px;
+    }
+
+    .footer-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1.5fr 1fr;
+      gap: 40px;
+    }
+
+    /* Headings */
+    .footer-title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    /* Links General */
+    .footer-column a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.4;
+      transition: opacity 0.2s;
+    }
+
+    .footer-column a:hover {
+      opacity: 0.8;
+    }
+
+    .footer-column a.active-link {
+      color: #8b2820; /* Highlight color for Circulars/Notices */
+    }
+
+    /* Section 1: Mandatory Disclosures (2 Columns layout) */
+    .links-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 25px;
+    }
+
+    /* Section 2: Address Column */
+    .address-column {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .address-text {
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+
+    /* Section 3: Right Links Sub-grid */
+    .address-links-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      text-align: right;
+    }
+
+    /* Section 4: Important Links */
+    .important-links-column {
+      text-align: right;
+    }
+
+    .important-links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      
+      .address-column, 
+      .important-links-column {
+        text-align: left;
+        align-items: flex-start;
+      }
+
+      .address-links-grid {
+        text-align: left;
+      }
+
+      .important-links-list {
+        align-items: flex-start;
+      }
+    }
+#header{
+    background-color: black;
+    display: flex;
+    
+}
+img{
+    display: inline;
+}
+li{
+    /* display: flex; */
+    display: inline;
+    color: white;
+    margin: 30px;
+    font-size: 20px;
+}
+#glance{
+    font-size: 60px;
+    padding-left: 90;
+}
+#text1{
+    padding-left: 30px;
+}
+#text2{
+    font-size: 20px;
+    padding-left: 90px;
+}
+#footer{
+    background-color: black;
+    color: white;
+}
+#text3{
+    font-size: 20px;
+    padding-left: 80px;
+}
+
+
+
+.glance-section {
+      background-color: #f3f3f3;
+      max-width: 1500px;
+      width: 100%;
+      padding: 60px 50px;
+      border-radius: 4px;
+    }
+
+    /* Header Area */
+    .glance-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      gap: 40px;
+    }
+
+    .glance-title {
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: #1a1a1a;
+      font-family: 'Times New Roman', Times, serif, Georgia; /* Matches the serif style header in image */
+      white-space: nowrap;
+    }
+
+    .glance-description {
+      font-size: 1.05rem;
+      color: #333333;
+      max-width: 100%;
+      line-height: 1.5;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 45px 30px;
+    }
+
+    /* Individual Stat Item */
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .stat-number {
+      font-size: 2.1rem;
+      font-weight: 600;
+      color: #8b181b; /* Dark Red Accent Color */
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      .glance-header {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .glance-section {
+        padding: 30px 20px;
+      }
+
+      .glance-title {
+        font-size: 2.2rem;
+      }
+    }
